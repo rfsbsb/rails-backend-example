@@ -1,8 +1,8 @@
 class CreateBooks < ActiveRecord::Migration
   def change
     create_table :books do |t|
-      t.string :nome
-      t.integer :pages
+      t.string :titulo
+      t.integer :paginas
       t.text :resumo
       t.references :author, index: true, foreign_key: true
 
