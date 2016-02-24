@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(version: 20160223181120) do
   end
 
   create_table "books", force: :cascade do |t|
-    t.string   "nome"
-    t.integer  "pages"
+    t.string   "titulo"
+    t.integer  "paginas"
     t.text     "resumo"
     t.integer  "author_id"
     t.datetime "created_at", null: false
